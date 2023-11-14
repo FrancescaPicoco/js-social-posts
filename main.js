@@ -89,7 +89,7 @@ let contain = document.getElementById("container")
 for (let i = 0; i < posts.length; i++) {
     //const element = array[i];
     const firstCicle = posts.forEach((element) => { 
-        contain.innerHTML= `<div class=post>
+        contain.innerHTML += `<div class=post>
                             <div class = "post_header">
                                 <div class= "post-meta">
                                     <div class="post-meta__icon">
@@ -121,7 +121,13 @@ for (let i = 0; i < posts.length; i++) {
                             </div>` 
     })
 }
-
+let startLike = 0
+for (let i = 0; i < 100; i++) {
+    const indexLike =i;
+    console.log(indexLike)
+    document.getElementById(like-counter-1).innerHTML = (indexLike)
+    
+}
 
 
 //let eventoLike = document.querySelectorAll("<a>")
